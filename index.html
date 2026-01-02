@@ -3,57 +3,92 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Avitus Trading - Mixing Tubs (Blue Depth)</title>
+<title>Avitus Trading - Products (Version 5)</title>
 <style>
-    body { margin:0; font-family:'Helvetica Neue', Helvetica, sans-serif; background:#f0f4f8; color:#fff; line-height:1.6; }
+    body { margin:0; font-family:'Helvetica Neue', Helvetica, sans-serif; background:#fff; color:#333; line-height:1.8; font-size:18px; }
     header { position:sticky; top:0; background:linear-gradient(90deg, #003087, #001f5b); padding:15px 40px; display:flex; justify-content:space-between; align-items:center; z-index:100; box-shadow:0 4px 20px rgba(0,0,0,0.3); }
     header img { height:70px; }
     .contact-btn { background:#fff; color:#003087; padding:12px 35px; border-radius:5px; text-decoration:none; font-weight:bold; transition:0.3s; }
     .contact-btn:hover { background:#003087; color:#fff; }
-    .hero { background:linear-gradient(to right, #003087, #0050b3); padding:140px 20px; text-align:center; }
+    .hero { background:linear-gradient(to right, #003087, #0050b3); padding:140px 20px; text-align:center; color:#fff; }
     h1 { font-size:50px; margin:10px 0; }
-    .section { display:flex; flex-wrap:wrap; align-items:center; padding:80px 40px; gap:50px; opacity:0; animation:fadeIn 1.5s forwards; }
-    .section:nth-child(even) { background:#001f5b; flex-direction:row-reverse; }
-    .section img { flex:1; min-width:300px; max-width:50%; border-radius:20px; box-shadow:0 10px 30px rgba(0,0,0,0.4); }
-    .section-info { flex:1; padding:20px; }
-    .bulk { background:#001f5b; text-align:center; padding:80px 20px; }
-    .bulk img { max-width:100%; border-radius:15px; }
+    h2, h3 { font-weight:bold; } /* Bold headings */
+    .section { display:flex; flex-wrap:wrap; align-items:center; padding:80px 60px; gap:60px; opacity:0; animation:fadeIn 1.5s forwards; background:#f0f4f8; border-radius:20px; margin:20px; }
+    .section:nth-child(even) { flex-direction:row-reverse; }
+    .section img { flex:1; min-width:300px; max-width:50%; border-radius:20px; box-shadow:0 10px 30px rgba(0,0,0,0.1); }
+    .section-info { flex:1; padding:30px; }
+    .buckets { background:#f0f4f8; padding:60px 20px; color:#333; }
+    .bucket-section { display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:40px; max-width:1200px; margin:0 auto;
+img { width: 100%; height: auto;}	}
+    .bucket-item { background:#fff; padding:30px; border-radius:15px; text-align:center; box-shadow:0 5px 15px rgba(0,0,0,0.1); }
+    .bulk { background:#f0f4f8; text-align:center; padding:80px 40px; color:#333; }
+    .bulk img { max-width:70%; border-radius:15px; } /* Max width 70% */
     table { max-width:900px; margin:40px auto; border-collapse:collapse; background:#fff; color:#333; }
     th { background:#003087; color:#fff; }
     td { padding:15px; text-align:center; border:1px solid #0050b3; }
-    .contact { background:#000; padding:100px 20px; text-align:center; }
+    .contact { background:#000; padding:100px 20px; text-align:center; color:#fff; }
     @keyframes fadeIn { from {opacity:0; transform:translateY(30px);} to {opacity:1; transform:translateY(0);} }
-    footer { background:#003087; padding:25px; text-align:center; }
+    footer { background:#003087; padding:25px; text-align:center; color:#fff; }
 </style>
 </head>
 <body>
 <header>
-    <img src="https://i.imgur.com/3z3jY0b.png" alt="Avitus Trading Logo">
+    <img src="res/image1.png" alt="Avitus Trading Logo">
     <a href="#contact" class="contact-btn">Contact Us</a>
 </header>
 <section class="hero">
     <h1>Avitus Trading LLC</h1>
-    <p>Heavy-Duty Mixing Tubs Built for Professional Use</p>
+    <p>We are a company specialized in the manufacturing of plastic trays for multiple applications, including mixing materials for construction. With more than five years of experience, we export our products to the United States and Canada, offering quality and reliability in each piece.</p>
 </section>
 <section class="section">
-    <img src="https://m.media-amazon.com/images/I/71dzfhfkxjL._AC_UF894,1000_QL80_.jpg" alt="Medium Mixing Tub">
+    <img src="res/image0.png" alt="Medium Mixing Tub">
     <div class="section-info">
         <h2>Medium Tub</h2>
         <p>Dimensions: 5.91 × 18.50 × 26.38 in<br>Weight: 1.11 kg (2.42 lb) ±5%<br>Sales Price: $3.73 per unit</p>
     </div>
 </section>
 <section class="section">
-    <img src="https://mobileimages.lowes.com/productimages/90931c17-90e1-4f1d-9c57-31eaa9efc03e/09827094.jpg" alt="Large Mixing Tub">
     <div class="section-info">
         <h2>Large Tub</h2>
         <p>Dimensions: 7.87 × 22.05 × 33.46 in<br>Weight: 1.76 kg (3.88 lb) ±5%<br>Sales Price: $7.45 per unit</p>
+    </div>
+    <img src="res/image2.png" alt="Large Mixing Tub">
+</section>
+<section class="buckets">
+    <h2>Rubber Buckets</h2>
+    <div class="bucket-section">
+        <div class="bucket-item">
+            <img src="res/rubberbucket.png" alt="Rubber Bucket">
+            <h3>Item #1</h3>
+            <p>Diameter: 38 cm, Height: 30 cm<br>Weight: 2.1 kg<br>Pack: 12 buckets<br>Pallets: 162 units per pallet</p>
+        </div>
+        <div class="bucket-item">
+            <img src="res/rubberbucket.png" alt="Rubber Bucket">
+            <h3>Item #2</h3>
+            <p>Diameter: 34 cm, Height: 26 cm<br>Weight: 1.75 kg<br>Pack: 12 buckets<br>Pallets: 288 units per pallet</p>
+        </div>
+        <div class="bucket-item">
+            <img src="res/rubberbucket.png" alt="Rubber Bucket">
+            <h3>Item #3</h3>
+            <p>Diameter: 34 cm, Height: 26 cm<br>Weight: 1.75 kg<br>Pack: 12 buckets<br>Pallets: 288 units per pallet</p>
+        </div>
+        <div class="bucket-item">
+            <img src="res/rubberbucket.png" alt="Rubber Bucket">
+            <h3>Item #4</h3>
+            <p>Diameter: 32 cm, Height: 29 cm<br>Weight: 1.5 kg<br>Pack: 12 buckets<br>Pallets: 432 units per pallet</p>
+        </div>
+        <div class="bucket-item">
+            <img src="res/rubberbucket.png" alt="Rubber Bucket">
+            <h3>Item #5</h3>
+            <p>Diameter: 28 cm, Height: 22 cm<br>Weight: 1.2 kg<br>Pack: 12 buckets<br>Pallets: 432 units per pallet</p>
+        </div>
     </div>
 </section>
 <section class="bulk">
     <h2>Bulk Shipping Information</h2>
     <p>Medium: 240 tubs/pallet • 60 pallets/truck • Truck Weight: 15,840 kg (34,848 lb) ±5%</p>
     <p>Large: 180 tubs/pallet • 60 pallets/truck • Truck Weight: 19,008 kg (41,904 lb) ±5%</p>
-    <img src="https://polyflute.com/wp-content/uploads/2023/06/collapsible-pallet-containers-1.jpg" alt="Stacked tubs on pallet">
+    <img src="res/image3.png" alt="Specs Table">
     <table>
         <tr><th>Size</th><th>Tubs per Pallet</th><th>Pallets per Truck</th><th>Truck Weight ±5%</th></tr>
         <tr><td>Medium</td><td>240</td><td>60</td><td>15,840 kg (34,848 lb)</td></tr>
@@ -72,6 +107,6 @@
     Email: darin@avitustrading.com<br>
     Other offices: Monterrey, Mexico</p>
 </section>
-<footer>© 2025 Avitus Trading LLC</footer>
+<footer>© 2026 Avitus Trading LLC</footer>
 </body>
 </html>
